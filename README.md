@@ -16,7 +16,7 @@ Utilicé flex para darle estilo responsive
 
 
 ## Ver ejemplo en vivo
-✔️[ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
+✔️[Demo](https://miguelledesmac.github.io/Credit-card-interactive/)
 
 ## Instalacion
 Este proyecto no necesita instalacion. simplemente abre la carpeta o haz doble click en la demo
