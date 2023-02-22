@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Interactive card</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    
+    <div class="card-container">
+
+      <!-- Tarjeta trasera-->
+      <div class="card-container__behind">
+        <p class="card-container__band-magnet"></p>
+        <div class="card-container__behind__csv">
+          <p class="card-container__behind__csv__number">000</p>
+        </div>
+
+
+        <!--DataBank dibujos lineas traseras-->
+        <div class="card-container__behind__data-bank">
+          <div class="block-band1 band">
+            <span class="large-band band-line"></span>
+            <span class="small-band band-line"></span>
+            <span class="small-band band-line"></span>
+            <span class="very-small-band band-line"></span>
+          </div>
+          
+          <div class="block-band2 band">
+            <span class="small-band band-line"></span>
+            <span class="middle-band band-line"></span>
+            <span class="middle-band-small band-line"></span>
+            <span class="very-small-band band-line"></span>
+          </div>
+          
+          <div class="block-band3 band">
+            <span class="very-small-band band-line"></span>
+            <span class="small-band band-line"></span>
+            <span class="small-band band-line"></span>
+            <span class="large-band band-line"></span>
+          </div>
+        </div>
+                
+      </div>
+
+
+
+
+      <!--Tarjeta frontal-->
+      <div class="front-card">
+        <div class="front-card__circles">
+          <p class="front-card__circles__white"></p>
+          <p class="front-card__circles__small"></p>
+
+        </div>
+
+
+        <div class="front-card__numbers">
+          <p id="numberCard" class="front-card__numbers__digits">0000 0000 0000 0000</p>
+          
+        </div>
+
+
+        <div class="front-card__data-container">
+        <p class="front-card__data-container__name">jane appleseed</p>
+        <div class="front-card__data-container__date">
+           <p id="cardMonth">00</p> / <p id="cardYear">00</p> 
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- formulario para tarjeta -->
+    <form id="form" action="#">
+      <label for="name">Cardholder Name</label>
+
+      <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+      <small class="error error-name"> </small>
+
+      <label for="number-card">Card Number</label>
+      <input minlength="19" maxlength="19" name="number-card" id="select-card-number" placeholder="e.g. 1234 5678 9123 0000">
+      <small class="error error-numbers"></small>
+      
+      <label for="data">Exp. Date (MM/YY)</label>
+      
+      <div class="data-form">
+        <div class="data-container">
+          <input name="data" id="month" maxlength="2" placeholder="MM">
+          
+          <input name="data" id="year" minlength="2" maxlength="2" placeholder="YY">
+             
+        </div>
+        <small class="error error-data"></small>
+        <small class="error year-invalid"></small>  
+        
+        
+        <div class="cvc-try">
+          <label for="cvc"> CVC</label>
+            <input  class="cvc-form " name="cvc" minlength="3" maxlength="3" placeholder="e.g. 123">
+            <small class="error error-cvc "></small>
+        </div>
+        </div>
+    
+    </div>
+    <small class="error data-error "></small>
+  
+    <input class="btn" id="submit-btn" type="submit" value="Confirm">
+
+      
+    </form>
+  </main>
+
+  <!-- VALIDACIÓN TARJETA -->
+  <main class="validate-container">
+    <div class="check">
+      <p class="check__arrow down-arrow"></p>
+    </div>
+    <h1 class="validate-container__tittle">Thank you!</h1>
+    <p class="validate-container__p">We've added your card details</p>
+    <button class="validate-container__button btn">Continue</button>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="color-footer">Frontend Mentor</span></a>. 
+    Coded by <a href="#"><span class="color-footer">Xcorpio</span></a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
